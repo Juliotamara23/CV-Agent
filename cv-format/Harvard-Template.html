@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard Resume Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --harvard-red: #A51C30;
+            --text-gray: #333;
+            --border-gray: #ccc;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: var(--text-gray);
+        }
+
+        /* Contenedor tipo Hoja A4 */
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm 20mm;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--harvard-red);
+            font-family: 'Crimson Pro', serif;
+            font-size: 24pt;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 9pt;
+            border-top: 1px solid var(--border-gray);
+            padding-top: 8px;
+        }
+
+        section {
+            margin-top: 15px;
+        }
+
+        h2 {
+            color: var(--harvard-red);
+            font-size: 11pt;
+            border-bottom: 1px solid var(--border-gray);
+            margin-bottom: 10px;
+            padding-bottom: 2px;
+            text-transform: none;
+        }
+
+        .entry {
+            margin-bottom: 12px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+
+        .entry-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 10pt;
+            margin-top: 2px;
+        }
+
+        .summary-text, p {
+            font-size: 10pt;
+            line-height: 1.4;
+            margin-top: 5px;
+        }
+
+        ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+            font-size: 10pt;
+        }
+
+        li {
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+
+        /* Estilos de impresión */
+        @media print {
+            body { background: none; padding: 0; }
+            .page { box-shadow: none; margin: 0; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="page">
+        <header>
+            <h1>HARVARD RESUME TEMPLATE</h1>
+            <div class="contact-info">
+                Home or Campus Address (optional) • City, State Zip • youremail@email.com • (xxx) xxx-xxxx
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p class="summary-text">
+                Include a short, focused overview highlighting your key strengths, interests, and relevant experience. Aim for 2–3 concise sentences that give employers a clear sense of your abilities, academic focus, or career goals. Avoid generic statements; instead, emphasise qualities or achievements that directly support the roles you’re seeking.
+            </p>
+        </section>
+
+        
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Company Name</span>
+                    <span>City, State</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Job Title</span>
+                    <span>Start Date – End Date</span>
+                </div>
+                <ul>
+                    <li>Starting with your latest role, outline your responsibilities, achievements, and outcomes using bullet points</li>
+                    <li>Avoid personal pronouns; lead each bullet with an action verb</li>
+                    <li>Add numbers or metrics to show the scale and impact of your achievements</li>
+                    <li>Use present tense for current responsibilities, past tense for achievements and previous roles</li>
+                </ul>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Company Name</span>
+                    <span>City, State</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Job Title</span>
+                    <span>Start Date – End Date</span>
+                </div>
+                <ul>
+                    <li>For your next role, continue describing your work, skills, and results in bullet form</li>
+                    <li>Avoid repeating achievements if you have more recent examples</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Leadership & Activities -->
+        <section>
+            <h2>Leadership & Activities</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Organization Name</span>
+                    <span>City, State</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Role</span>
+                    <span>Start Date – End Date</span>
+                </div>
+                <ul>
+                    <li>You may format this section like the Experience section or list roles without bullet descriptions</li>
+                    <li>If these activities are more relevant to the opportunity, consider placing this section above Experience</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>School Name</span>
+                    <span>City, State</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Degree, Concentration</span>
+                    <span>Graduation Date</span>
+                </div>
+                <ul>
+                    <li>Honors/GPA (optional)</li>
+                    <li>Coursework (optional): Include if you don’t have much work experience – highly relevant courses only</li>
+                    <li>Thesis (optional): “[Thesis Title]”</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span>School Name</span>
+                    <span>City, State</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Degree, Concentration</span>
+                    <span>Graduation Date</span>
+                </div>
+                <ul>
+                    <li>Honors/GPA (optional)</li>
+                    <li>Coursework (optional): Include if you don’t have much work experience – highly relevant courses only</li>
+                    <li>Thesis (optional): “[Thesis Title]”</li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Group your skills by theme</strong> to save space and improve readability</li>
+                <li><strong>List your relevant technical skills</strong> first to align your resume with the target role</li>
+                <li><strong>If adding foreign languages,</strong> include your level of proficiency</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
