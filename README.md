@@ -21,20 +21,11 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 -   **Harvard-Template.html**: El estándar visual. Elegantemente estructurado en HTML/CSS, optimizado para legibilidad y sistemas de seguimiento de candidatos (ATS).
 -   **Interactividad**: Los CVs generados incluyen un botón flotante inteligente para descargar en PDF (usando la función nativa del navegador para preservar hipervínculos).
 
-## 📂 Estructura del Proyecto
-
-```text
-├── .agent/             # Skills y Workflows internos del agente
-├── .gemini/            # Configuración específica del entorno de IA
-├── CVs/                # (Ignorado) Salidas de CVs generados en HTML/CSS
-├── Fuentes/            # (Ignorado) Documentos originales (GitHub, LinkedIn, etc.)
-├── cv-format/          # Plantilla base en formato Harvard
-├── conocimiento.md     # (Ignorado) Perfil consolidado del usuario
-├── CV-Agent.md         # Definición del sistema y lógica del agente
-└── README.md           # Este archivo
-```
-
 ## 📋 Cómo Funciona
+
+**Paso previo**: 
+- Descarga tu perfil de LinkedIn desde la configuración de tu cuenta en formato PDF y guárdalo en la carpeta `Fuentes/`.
+- Asegurate de tener el MCP de GitHub instalado y configurado. 
 
 1.  **Recopilación**: Se extrae información de fuentes como LinkedIn y GitHub hacia `Fuentes/`.
 2.  **Consolidación**: El agente procesa estas fuentes para mantener actualizado `conocimiento.md`.
@@ -46,7 +37,7 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 Para generar o actualizar el CV:
 1.  Asegúrate de que `conocimiento.md` esté al día.
 2.  Pide al agente: *"Genera mi CV general"* o *"Adapta mi CV a esta oferta: [pegar descripción del empleo]"*.
-3.  Abre el archivo generado en `CVs/`, revisa y usa el botón **Descargar PDF**.
+3.  Abre el archivo generado en `CVs/`, **revisa siempre la información generada** y usa el botón **Descargar PDF**.
 
 ---
 *Desarrollado como una solución integral para profesionales que buscan eficiencia y precisión en su búsqueda de empleo.*
