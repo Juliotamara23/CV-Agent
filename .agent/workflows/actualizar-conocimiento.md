@@ -3,7 +3,7 @@ description: Sincroniza y actualiza la base de conocimientos (conocimiento.md) a
 ---
 
 ### Objetivo
-Mantener el archivo `conocimiento.md` actualizado con la información más reciente de las fuentes (`CV-JulioTamara.md`, `LinkedIn.md`, `perfil_github.md`), eliminando redundancias y organizando la información de manera óptima para el consumo por parte de agentes de IA.
+Mantener el archivo `conocimiento.md` actualizado con la información más reciente de las fuentes (`Fuentes/`), eliminando redundancias y organizando la información de manera óptima para el consumo por parte de agentes de IA.
 
 ### Pasos
 

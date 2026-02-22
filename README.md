@@ -1,12 +1,12 @@
-# CV-Agent 📄🤖
+<h1 align="center">CV-Agent</h1>
 
-**CV-Agent** es un ecosistema inteligente diseñado para la gestión, optimización y generación dinámica de currículum vitae profesionales. Utiliza un enfoque basado en agentes para transformar una base de conocimiento desestructurada en documentos de alto impacto que cumplen con los estándares de reclutamiento más exigentes.
+**CV-Agent** es un agente inteligente diseñado para la gestión, optimización y generación dinámica de currículum vitae profesionales. Utiliza un enfoque basado en agentes para transformar una base de conocimiento desestructurada en documentos de alto impacto que cumplen con los estándares de reclutamiento más exigentes.
 
-## 🚀 Propósito
+## Propósito
 
-El objetivo principal de este proyecto es automatizar la creación de CVs altamente personalizados y adaptados a ofertas laborales específicas, asegurando coherencia total mediante una "Fuente Única de Verdad" y utilizando el **formato Harvard** como estándar de diseño.
+El objetivo principal de este proyecto es automatizar la creación de CVs altamente personalizados y adaptados a ofertas laborales específicas, asegurando coherencia total mediante una "Fuente Única de Verdad" y utilizando el [**Formato Harvard**](cv-format\Harvard-Template.png) como estándar de diseño.
 
-## 🛠️ Componentes Principales
+## Componentes Principales
 
 ### 1. Base de Conocimiento (`conocimiento.md`)
 Es el núcleo del sistema. Contiene toda la trayectoria profesional, proyectos, habilidades y certificaciones del usuario. Al estar centralizada, garantiza que cualquier CV generado contenga información verificada y actualizada.
@@ -21,7 +21,7 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 -   **Harvard-Template.html**: El estándar visual. Elegantemente estructurado en HTML/CSS, optimizado para legibilidad y sistemas de seguimiento de candidatos (ATS).
 -   **Interactividad**: Los CVs generados incluyen un botón flotante inteligente para descargar en PDF (usando la función nativa del navegador para preservar hipervínculos).
 
-## 📋 Cómo Funciona
+## Cómo Funciona
 
 **Paso previo**: 
 - Descarga tu perfil de LinkedIn desde la configuración de tu cuenta en formato PDF y guárdalo en la carpeta `Fuentes/`.
@@ -32,7 +32,7 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 3.  **Sincronización**: Cuando se requiere un CV, el agente lee `conocimiento.md` y lo inyecta en la estructura de la plantilla Harvard.
 4.  **Adaptación**: Si el usuario proporciona una oferta laboral, el agente analiza la compatibilidad y genera una versión optimizada destacando las coincidencias clave.
 
-## 📥 Uso Recomendado
+## Uso Recomendado
 
 Para generar o actualizar el CV:
 1.  Asegúrate de que `conocimiento.md` esté al día.

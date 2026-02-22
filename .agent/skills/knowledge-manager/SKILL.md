@@ -1,7 +1,8 @@
-# Skill: Knowledge Manager
-
-## Descripción
-Esta skill permite procesar múltiples fuentes de información profesional (CVs, perfiles de redes sociales, repositorios) para generar una "Single Source of Truth" (SSOT) en un archivo de conocimiento estructurado.
+```
+name: Knowledge Manager
+description: Esta skill permite procesar múltiples fuentes de información profesional (CVs, perfiles de redes sociales, repositorios) para generar una "Single Source of Truth" (SSOT) en un archivo de conocimiento estructurado.
+version: 1.0.1
+```
 
 ## Capacidades
 - **Extracción Inteligente**: Identifica datos clave en archivos Markdown y texto.
