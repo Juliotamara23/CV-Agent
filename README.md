@@ -24,8 +24,8 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 ## Cómo Funciona
 
 **Paso previo**: 
-- Descarga tu perfil de LinkedIn desde la configuración de tu cuenta en formato PDF y guárdalo en la carpeta `Fuentes/`.
-- Asegurate de tener el MCP de GitHub instalado y configurado. 
+- Descarga tu perfil de LinkedIn desde la configuración de tu cuenta en formato PDF (recomiendo pasarlo a markdown) y guárdalo en la carpeta `Fuentes/`.
+- Asegurate de tener el MCP de GitHub instalado y configurado, con este podras extraer la información de tus repositorios de GitHub y copiar la respuesta de la IA en un archivo .md y guardarlo en la carpeta en cuestión.
 
 1.  **Recopilación**: Se extrae información de fuentes como LinkedIn y GitHub hacia `Fuentes/`.
 2.  **Consolidación**: El agente procesa estas fuentes para mantener actualizado `conocimiento.md`.
