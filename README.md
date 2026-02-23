@@ -35,9 +35,10 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 ## Uso Recomendado
 
 Para generar o actualizar el CV:
-1.  Asegúrate de que `conocimiento.md` esté al día.
-2.  Pide al agente: *"Genera mi CV general"* o *"Adapta mi CV a esta oferta: [pegar descripción del empleo]"*.
-3.  Abre el archivo generado en `CVs/`, **revisa siempre la información generada** y usa el botón **Descargar PDF**.
+1. Asegúrate de tener el paso previo realizado.
+2. Asegúrate de que `conocimiento.md` esté al día te recomiendo que **revises siempre la información generada**.
+3. Pide al agente: *"Genera mi CV"* o *"Adapta mi CV a esta oferta: [pegar descripción del empleo]"*.
+4. Abre el archivo generado en `CVs/`, **revisa siempre la información generada**, cambia el idioma si lo deseas y usa el botón **Descargar PDF**.
 
 ---
 *Desarrollado como una solución integral para profesionales que buscan eficiencia y precisión en su búsqueda de empleo.*
