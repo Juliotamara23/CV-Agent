@@ -4,7 +4,7 @@
 
 ## Propósito
 
-El objetivo principal de este proyecto es automatizar la creación de CVs altamente personalizados y adaptados a ofertas laborales específicas, asegurando coherencia total mediante una "Fuente Única de Verdad" y utilizando el [**Formato Harvard**](cv-format\Harvard-Template.png) como estándar de diseño.
+El objetivo principal de este proyecto es automatizar la creación de CVs altamente personalizados y adaptados a ofertas laborales específicas, asegurando coherencia total mediante una "Fuente Única de Verdad" y utilizando el [**Formato Harvard**](cv-format/Harvard-Template.png) como estándar de diseño.
 
 ## Componentes Principales
 
