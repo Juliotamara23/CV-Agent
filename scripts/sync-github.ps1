@@ -92,5 +92,5 @@ if ($newContent.Length -gt $maxFileSize) {
     $newContent = $newContent.Substring(0, [math]::Min($newContent.Length, $maxFileSize - 1))
 }
 
-$newContent | Set-Content $targetFile
+[System.IO.File]::WriteAllText((Resolve-Path $targetFile), $newContent, [System.Text.Encoding]::UTF8)
 Write-Host "Sync complete!"
