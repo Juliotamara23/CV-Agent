@@ -6,7 +6,7 @@ version: 1.0.0
 
 ## Propósito
 
-Esta skill transforma la información de `conocimiento.md` en un archivo HTML profesional siguiendo estrictamente la plantilla Harvard ubicada en `cv-format/Harvard-Template.html`. El archivo resultante se guarda en la carpeta `CVs/` con un nombre derivado del nombre completo del usuario.
+Esta skill transforma la información de `conocimiento.md` en un archivo HTML profesional siguiendo estrictamente la plantilla Harvard ubicada en `templates/Harvard-Template.html`. El archivo resultante se guarda en la carpeta `CVs/` con un nombre derivado del nombre completo del usuario.
 
 ---
 
@@ -15,7 +15,7 @@ Esta skill transforma la información de `conocimiento.md` en un archivo HTML pr
 Antes de ejecutar esta skill, el agente **DEBE** verificar:
 
 1. **`conocimiento.md` existe y está actualizado.** Si no existe, ejecutar primero la skill `knowledge-manager`.
-2. **La plantilla Harvard existe** en `cv-format/Harvard-Template.html`.
+2. **La plantilla Harvard existe** en `templates/Harvard-Template.html`.
 
 ---
 
@@ -36,7 +36,7 @@ Antes de ejecutar esta skill, el agente **DEBE** verificar:
 
 ### Paso 2: Leer la Plantilla Harvard
 
-- Leer `cv-format/Harvard-Template.html` para obtener la estructura exacta de HTML y CSS.
+- Leer `templates/Harvard-Template.html` para obtener la estructura exacta de HTML y CSS.
 - **NUNCA modificar la plantilla original.** Solo usarla como referencia.
 
 ### Paso 3: Determinar el Nombre del Archivo

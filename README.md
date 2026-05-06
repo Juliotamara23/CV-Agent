@@ -4,7 +4,7 @@
 
 ## Propósito
 
-El objetivo principal de este proyecto es automatizar la creación de CVs altamente personalizados y adaptados a ofertas laborales específicas, asegurando coherencia total mediante una "Fuente Única de Verdad" y utilizando el [**Formato Harvard**](cv-format/Harvard-Template.png) como estándar de diseño.
+El objetivo principal de este proyecto es automatizar la creación de CVs altamente personalizados y adaptados a ofertas laborales específicas, asegurando coherencia total mediante una "Fuente Única de Verdad" y utilizando el [**Formato Harvard**](templates/Harvard-Template.png) como estándar de diseño.
 
 ## Componentes Principales
 
@@ -18,7 +18,7 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 -   **Análisis de Compatibilidad**: Evaluación de requisitos cumplidos, brechas y sugerencias estratégicas.
 
 ### 3. Plantillas y Formatos
--   **Harvard-Template.html**: El estándar visual. Elegantemente estructurado en HTML/CSS, optimizado para legibilidad y sistemas de seguimiento de candidatos (ATS).
+-   **Harvard-Template.html**: El estándar visual. Elegantemente estructurado en HTML/CSS, optimizado para legibilidad y sistemas de seguimiento de candidatos (ATS). Se encuentra en la carpeta `templates/`.
 -   **Interactividad**: Los CVs generados incluyen un botón flotante inteligente para descargar en PDF (usando la función nativa del navegador para preservar hipervínculos).
 
 ## Cómo Funciona
@@ -29,7 +29,7 @@ El cerebro del proyecto. Este archivo define el comportamiento del asistente IA,
 
 1.  **Recopilación**: Se extrae información de fuentes como LinkedIn y GitHub hacia `Fuentes/`.
 2.  **Consolidación**: El agente procesa estas fuentes para mantener actualizado `conocimiento.md`.
-3.  **Sincronización**: Cuando se requiere un CV, el agente lee `conocimiento.md` y lo inyecta en la estructura de la plantilla Harvard.
+3.  **Sincronización**: Cuando se requiere un CV, el agente lee `conocimiento.md` y lo inyecta en la estructura de la plantilla Harvard ubicada en `templates/`.
 4.  **Adaptación**: Si el usuario proporciona una oferta laboral, el agente analiza la compatibilidad y genera una versión optimizada destacando las coincidencias clave.
 
 ## Uso Recomendado
