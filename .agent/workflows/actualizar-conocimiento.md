@@ -7,14 +7,17 @@ Mantener el archivo `conocimiento.md` actualizado con la información más recie
 
 ### Pasos
 
+0. **Verificación de Duplicados**:
+   - Ejecutar `python scripts/dedup-check.py --input-dir Fuentes/ --output report.json --fail-on-duplicates`.
+   - Terminar con error código 1 si se detectan duplicados.
+
 1. **Recopilación de Fuentes**:
    - Descubrimiento dinámico: Listar archivos `**/*.md` dentro del directorio `Fuentes/`.
    - Leer individualmente cada archivo Markdown encontrado.
    - Omitir cualquier archivo que no sea `.md` o que supere el límite de 1MB.
 
 2. **Análisis y Consolidación**:
-   - Identificar información duplicada entre las fuentes usando `computeFingerprint(entry)`.
-   - Ejecutar `deduplicateEntries(entries[])` para agrupar y consolidar las entradas.
+   - Identificar información duplicada entre las fuentes.
    - Resolver discrepancias priorizando la información más reciente o detallada.
    - Extraer proyectos específicos de GitHub del archivo `perfil_github.md`.
 
