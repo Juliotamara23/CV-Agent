@@ -19,7 +19,8 @@ def deduplicate_entries(entries):
         
         # Simple similarity check (could be refined to Jaccard index)
         is_duplicate = False
-        for seen_fp, original_entry in seen_fingerprints.items():
+        for seen_fp_items, original_entry in seen_fingerprints.items():
+            seen_fp = collections.Counter(dict(seen_fp_items))
             # Check overlap
             total_elements = sum(fp.values())
             if total_elements == 0: continue
