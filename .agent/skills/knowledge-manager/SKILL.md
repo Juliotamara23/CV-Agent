@@ -4,8 +4,16 @@ description: Esta skill permite procesar múltiples fuentes de información prof
 version: 1.0.1
 ---
 
+## Sanity Check
+- **Cumplimiento de Formato**: Procesar ESTRICTAMENTE archivos `.md`.
+- **Límite de Tamaño**: Máximo 1MB por archivo.
+- **Patrones de Ignorado**: Omitir automáticamente archivos `.tmp`, `~*`, `temp*` y `.DS_Store`.
+- **Acciones de Validación**:
+  - Archivo no Markdown: Ignorar y registrar una advertencia.
+  - Archivo > 1MB: Rechazar e informar un error al usuario.
+
 ## Capacidades
-- **Extracción Inteligente**: Identifica datos clave en archivos Markdown y texto.
+- **Extracción Inteligente**: Identifica datos clave en archivos Markdown.
 - **Deduplicación**: Cruza información de múltiples fuentes para eliminar entradas repetidas (ej. la misma experiencia en LinkedIn y CV).
 - **Estructuración Semántica**: Organiza la información en un formato altamente legible para LLMs y agentes de IA.
 - **Categorización de Proyectos**: Clasifica automáticamente proyectos de GitHub por stack tecnológico y dominio.
