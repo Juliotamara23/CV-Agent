@@ -18,6 +18,10 @@ version: 1.0.1
 - **Estructuración Semántica**: Organiza la información en un formato altamente legible para LLMs y agentes de IA.
 - **Categorización de Proyectos**: Clasifica automáticamente proyectos de GitHub por stack tecnológico y dominio.
 
+## Deduplicación Semántica
+- **`computeFingerprint(entry)`**: Normaliza el texto de una entrada (minúsculas, eliminar puntuación, espacios extra) y calcula un hash N-gram (n=3) para identificar la estructura semántica.
+- **`deduplicateEntries(entries[])`**: Agrupa entradas basadas en el fingerprint calculado. Resuelve conflictos manteniendo la entrada más larga o, en caso de empate, la más reciente basada en la fecha de modificación del archivo original.
+
 ## Uso
 Para activar esta skill, el agente debe:
 1. Leer los archivos en el directorio `Fuentes/`.

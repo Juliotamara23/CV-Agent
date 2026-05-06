@@ -13,7 +13,8 @@ Mantener el archivo `conocimiento.md` actualizado con la información más recie
    - Omitir cualquier archivo que no sea `.md` o que supere el límite de 1MB.
 
 2. **Análisis y Consolidación**:
-   - Identificar información duplicada entre las fuentes (ej. la misma experiencia laboral en el CV y en LinkedIn).
+   - Identificar información duplicada entre las fuentes usando `computeFingerprint(entry)`.
+   - Ejecutar `deduplicateEntries(entries[])` para agrupar y consolidar las entradas.
    - Resolver discrepancias priorizando la información más reciente o detallada.
    - Extraer proyectos específicos de GitHub del archivo `perfil_github.md`.
 
