@@ -28,6 +28,17 @@ CV-agent/
 └── conocimiento.md      # SSOT final, validada y libre de duplicados
 ```
 
+## Ejemplo de Interacción: Flujo de Trabajo
+
+*El agente actúa como un arquitecto de datos, no solo como un redactor.*
+
+1. **User**: "Tengo un nuevo proyecto en `Fuentes/proyecto-ia.md`. ¿Puedes integrarlo?"
+2. **Agent**: "He validado el archivo y es correcto. He ejecutado el *Sanity Check* y detecté similitudes semánticas con tu experiencia en `LinkedIn.md`. ¿Prefieres fusionarlos bajo un solo ítem de *Automatización* o mantenerlos separados?"
+3. **User**: "Fusiona y destaca el impacto en el proyecto IA."
+4. **Agent**: "Perfecto. He actualizado `Fuentes/experiencia.md` con los logros fusionados. ¿Revisas el borrador antes de consolidar el `conocimiento.md`?"
+5. **User**: "OK."
+6. **Agent**: "Consolidado. `conocimiento.md` actualizado. ¿Generamos el CV o quieres que lo adapte a esta oferta laboral: [URL/Descripción]?"
+
 ## Flujo de Trabajo (SDD)
 
 1.  **Ingesta**: Colocas tus fuentes Markdown en `Fuentes/`.
@@ -35,11 +46,6 @@ CV-agent/
 3.  **Consolidación**: El `knowledge-manager` ejecuta el *Sanity Check* y deduplicación.
 4.  **Discusión**: Ajustas la información conversando con el agente sobre tus logros.
 5.  **Generación**: Tras la aprobación, se genera el CV bilingüe en `CVs/` bajo el estándar Harvard.
-
-## Uso
-
-Para iniciar, asegúrate de que tus archivos en `Fuentes/` estén en formato `.md`.
-Pide al agente: *"Genera mi CV"* o *"Adapta mi CV a esta oferta: [URL/Texto]"*.
 
 ---
 *Diseñado para la integridad, automatizado para la precisión.*
