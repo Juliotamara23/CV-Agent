@@ -28,6 +28,11 @@ CV-agent/
 └── conocimiento.md      # SSOT final, validada y libre de duplicados
 ```
 
+## Ejemplo de Plantilla (Harvard Format)
+<p align="center">
+  <img src="templates/Harvard-Template.png" alt="Harvard Resume Template" width="400">
+</p>
+
 ## Ejemplo de Interacción: Flujo de Trabajo
 
 *El agente actúa como un arquitecto de datos, no solo como un redactor.*
